@@ -1,3 +1,37 @@
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+
+# Python environments and cache
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+
+# dbt generated files and local credentials
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+profiles.yml
+
+# Airflow runtime files
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/airflow-webserver.pid
+
+# Editor and operating-system files
+.DS_Store
+.vscode/
+.idea/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
